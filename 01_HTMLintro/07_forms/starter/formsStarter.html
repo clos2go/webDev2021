@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms Input Samples</title>
+  </head>
+  <body>
+      <h1>INPUTS</h1>
+      <a href="https://www.w3schools.com/html/html_form_input_types.asp">W3 Input Types</a>
+      <section>
+    <form action="/tacos">
+        <p>
+            <label for="text1">TEXT BOX</label>
+            <input type="text" name="username" id="text1" placeholder="Username">
+        </p>
+        <p>
+            <label for="password1">PASSWORD</label>
+            <input action="" type="password" name="password" id="password1" placeholder="stuffs @'s and nums 512"></input>
+        </p>
+        
+        <p>
+            <label for="color1">COLOR</label>
+            <input action="" type="color" name="color" id="color1"></input>
+        </p>
+        <p>
+            <label for="email1">EMAIL</label>
+            <input action="" type="email" name="email" id="email1" placeholder="stuffs @'s and nums 512"></input>
+        </p>
+        <p>
+            <label for="month1">MONTH</label>
+            <input action="" type="month" name="month" id="month1"></input>
+        </p>
+        <p>
+            <label for="dateTime1">DATE and TIME</label>
+            <input action="" type="datetime-local" name="dateTime" id="dateTime1"></input>
+        </p>
+        <p>
+            <label for="radio1">RADIO</label>
+            <input action="" type="radio" name="radio" id="radio1"></input>
+        </p>
+        <p>
+            <label for="tel1">TELEPHONE</label>
+            <input action="" type="tel" name="telephone" id="tel1" placeholder="stuffs @'s and nums 512"></input>
+        </p>
+            <label for="url1">URL</label>
+            <input action="" type="url" name="url" id="url1" placeholder="stuffs @'s and nums 512"></input>
+        <p>
+            <label for="week1">WEEK</label>
+            <input action="" type="week" name="week" id="week1"></input>
+        </p>
+        <p>
+            <label for="button1">SUBMIT BUTTON</label>
+            <input action="" type="submit" name="button1" id="button1" value="CLICK ME!!!"></input>
+        </p>
+        </form>
+        <h1>SEARCH HIJACKING</h1>
+        <p>
+            <form action="https://www.google.com/search">
+                    <label for="button2">GOOGLE SEARCH</label>
+                    <input type="text" name="q" placeholder="Search for wuut?">
+                    <button name="">Google Search Submission</button>
+            </form>
+        </p>
+        <p>
+            <form action="https://www.reddit.com/search">
+                <label for="button3">REDDIT SEARCH</label>
+                <input type="text" name="q" placeholder="Search for wuut?">
+                <button name="">Search Google</button>
+            </form>
+        </p>
+        <p>
+            <form action="https://www.youtube.com/results">
+                <label for="button4">YOUTUBE SEARCH</label>
+                <input type="text" name="search_query" placeholder="Search for wuut?">
+                <button name="">Search YouTube</button>
+            </form>
+        </p>
+        </section>
+        <aside>
+        <h1>Radio Buttons, Checkboxes, & Selects</h1>
+        <h2>Checkbox Inputs</h2>
+        <form action="/birds">
+            <p>
+                <input type="checkbox" name="agree_tos" id="agree" checked></input>
+                <label for="agree">I agree to everything</label>
+                
+            </p>
+            <button>Submit</button>
+        </form>
+        <h2>Radio Button</h2>
+        <form action="/dogs">
+            <p>
+                <label for="xs">Xtra Smol</label>
+                <input type="radio" name="size" id="xs" value="xxs">
+            </p>
+            <p>
+                <label for="s">Smol</label>
+                <input type="radio" name="size" id="s" value="s">
+            </p>
+            <p>
+                <label for="m">Medium</label>
+                <input type="radio" name="size" id="m" value="m">
+            </p>
+            <button>submit</button>
+        </form>
+        <h2>Select Element</h2>
+        <form action="/tacos">
+            <label for="meal">Choose your meal type</label>
+            <select name="meal" id="meal">
+                <option value="vegan">Vegan</option>
+                <option value="meat">Meat</option>
+                <option value="macrobiotic">Macrobiotic</option>
+                <option value="caca">Caca</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+        <form action="">
+            <p>
+                <input type="range" name="cheeseLevel" id="cheeseLevel" min="1" max="10" value="7">
+                <label for="volume">Amount of Cheese</label>
+            </p>
+            
+            <p>
+                <input type="number" name="nums" id="nums" placeholder="Nums" min="1" max="1000">
+                <label for="number">NUMBER INOUT</label>
+            </p>
+            <p>
+                <label for="requests">Any Special Requests</label>
+            </p>
+            <textarea name="Requests?" id="requests" cols="30" rows="10" placeholder="Type something here"></textarea>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </aside>
+        <h2>Form Validations Demo</h2>
+        <form action="/dummy">
+            <label for="first">Enter First Name</label>
+            <input type="text" name="first" id="first" required>
+            <p>
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" minlength="5" maxlength="20">
+            </p>
+            <input type="email">
+            <input type="url">
+            <button type="submit">Submit</button>
+        </form>
+  </body>
+</html>
