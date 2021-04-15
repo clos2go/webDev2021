@@ -72,7 +72,7 @@
         </p>
         <p>
             <form action="https://www.youtube.com/results">
-                <label for="button4">REDDIT SEARCH</label>
+                <label for="button4">YOUTUBE SEARCH</label>
                 <input type="text" name="search_query" placeholder="Search for wuut?">
                 <button name="">Search YouTube</button>
             </form>
@@ -116,8 +116,22 @@
             </select>
             <button type="submit">Submit</button>
         </form>
-        <input type="range" name="volume" id="volume" >
-        <label for="volume">Volume</label>
+        <form action="">
+            <p>
+                <input type="range" name="cheeseLevel" id="cheeseLevel" min="1" max="10" value="7">
+                <label for="volume">Amount of Cheese</label>
+            </p>
+            
+            <p>
+                <input type="number" name="nums" id="nums" placeholder="Nums" min="1" max="1000">
+                <label for="number">NUMBER INOUT</label>
+            </p>
+            <p>
+                <label for="requests">Any Special Requests</label>
+            </p>
+            <textarea name="Requests?" id="requests" cols="30" rows="10" placeholder="Type something here"></textarea>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
     </aside>
   </body>
 </html>
