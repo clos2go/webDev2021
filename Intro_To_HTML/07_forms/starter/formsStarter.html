@@ -133,5 +133,17 @@
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </aside>
+        <h2>Form Validations Demo</h2>
+        <form action="/dummy">
+            <label for="first">Enter First Name</label>
+            <input type="text" name="first" id="first" required>
+            <p>
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" minlength="5" maxlength="20">
+            </p>
+            <input type="email">
+            <input type="url">
+            <button type="submit">Submit</button>
+        </form>
   </body>
 </html>
