@@ -9,8 +9,6 @@ let addNew = (command) => {
 	console.log(toDoList);
 };
 
-let 
-
 while (userInput !== "quit") {
 	if (userInput === "new") {
 		addNew(userInput);
